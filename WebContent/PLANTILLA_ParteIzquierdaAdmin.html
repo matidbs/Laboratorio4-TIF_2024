@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title></title>
+</head>
+<body>
+
+<div class = "menu">
+<ul class="nav flex-column">
+  <li class="nav-item">
+    <a class="nav-link active" href="MenuAdmin.jsp"><i class="bi bi-bank"> </i>Portal del Banco</a>
+  </li>
+  
+  <li class="nav-item">
+    <a class="nav-link" href="MenuAdmin.jsp"><i class="bi bi-person-fill"> </i>Gestionar Clientes</a>
+    <ul>
+        <li><a class = "nav-link" href="AgregarCliente.jsp"><i class="bi bi-person-fill-add"> </i>Agregar Cliente</a></li>
+        <li><a class = "nav-link" href="ModificarCliente.jsp"><i class="bi bi-person-lines-fill"> </i>Modificar Cliente</a></li>
+        <li><a class = "nav-link" href="ListarClientes.jsp"><i class="bi bi-list-columns-reverse"> </i>Listar Clientes</a></li>
+        <li><a class = "nav-link" href="DarBajaCliente.jsp"><i class="bi bi-person-fill-down"> </i>Dar de baja a Cliente</a></li>
+    </ul>
+  </li>
+
+  <li class="nav-item">
+    <a class="nav-link" href="MenuAdmin.jsp"><i class="bi bi-person-vcard-fill"> </i>Gestionar Cuentas</a>
+    <ul>
+        <li><a class = "nav-link" href="AgregarCuenta.jsp"><i class="bi bi-plus-circle-fill"> </i>Agregar Cuenta</a></li>
+        <li><a class = "nav-link" href="ModificarCuenta.jsp"><i class="bi bi-pencil"> </i>Modificar Cuenta</a></li>
+        <li><a class = "nav-link" href="ListarCuentas.jsp"><i class="bi bi-list"> </i>Listar Cuentas</a></li>
+        <li><a class = "nav-link" href="DarBajaCuenta.jsp"><i class="bi bi-person-dash"> </i>Dar baja de Cuenta</a></li>
+    </ul>
+  </li>
+   <li class="nav-item">
+  <a class="nav-link" href="MenuAdmin.jsp"><i class="bi bi-person-vcard-fill"> </i>Gestionar Prestamos</a>
+    <ul>
+    	<li><a class="nav-link" href="SolicitudesPrestamos.jsp"><i class="bi bi-piggy-bank-fill"> </i>Solicitudes de Prestamos</a></li>
+    	<li><a class="nav-link" href="PrestamosAutorizados.jsp"><i class="bi bi-clipboard"> </i>Prestamos Autorizados</a></li>	
+	</ul>
+  </li>
+   <li class="nav-item">
+   <a class="nav-link" href="MenuAdmin.jsp"><i class="bi bi-flag-fill"> </i>Ver reportes</a>
+    <ul>
+    	<li><a class="nav-link" href="ReporteCuentas.jsp"><i class="bi bi-people-fill"></i>Reporte de Cuentas</a></li>
+    	<li></li>
+	</ul>
+  </li>
+
+</ul>
+<form method = "post" action="ServletLogin">
+<input type = "submit" name = "btnSalir" value = "Cerrar sesión" class = "form-control">
+</form>
+</div>
+
+</body>
+</html>
